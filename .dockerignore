@@ -1,0 +1,13 @@
+.git
+.appdata
+**/bin
+**/obj
+**/node_modules
+**/dist
+**/.vite
+**/.vs
+**/.idea
+**/.vscode
+*.user
+*.suo
+*.log

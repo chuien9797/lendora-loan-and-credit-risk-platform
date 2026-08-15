@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Lendora.Api/Lendora.Api.csproj" />
+    <Project Path="src/Lendora.Application/Lendora.Application.csproj" />
+    <Project Path="src/Lendora.Domain/Lendora.Domain.csproj" />
+    <Project Path="src/Lendora.Infrastructure/Lendora.Infrastructure.csproj" />
+    <Project Path="src/Lendora.Tests/Lendora.Tests.csproj" />
+  </Folder>
+</Solution>

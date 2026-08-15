@@ -1,0 +1,20 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: lendora-postgres
+    environment:
+      POSTGRES_DB: "lendora_db"
+      POSTGRES_USER: "lendora"
+      POSTGRES_PASSWORD: "lendora_dev_password"
+    ports:
+      - "5433:5432"
+    volumes:
+      - lendora-postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U lendora -d lendora_db" ]
+      interval: 15s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  lendora-postgres-data:

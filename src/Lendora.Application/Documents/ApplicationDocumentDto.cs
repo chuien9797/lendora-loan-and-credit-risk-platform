@@ -1,0 +1,37 @@
+using Lendora.Domain.Enums;
+
+namespace Lendora.Application.Documents;
+
+public sealed record ApplicationDocumentDto(
+    Guid Id,
+    Guid LoanApplicationId,
+    ApplicationDocumentType DocumentType,
+    string OriginalFileName,
+    string? StoredFileName,
+    string? StoragePath,
+    long FileSize,
+    string ContentType,
+    Guid UploadedByUserId,
+    DateTime UploadedAtUtc,
+    bool SubmittedToBank,
+    ApplicationDocumentStatus Status,
+    string? ReviewNote,
+    Guid? ReviewedByUserId,
+    DateTime? ReviewedAtUtc,
+    DocumentOcrStatus OcrStatus,
+    string? OcrProvider,
+    decimal? OcrConfidence,
+    decimal? OcrSuggestedMonthlyIncome,
+    decimal? OcrSuggestedMonthlyExpenses,
+    string? OcrSuggestedNationalIdNumber,
+    bool? OcrNationalIdMatchesApplication,
+    string? OcrSuggestedAddress,
+    DateTime? OcrDocumentDate,
+    bool? OcrIsRecent,
+    string? OcrVerificationStatus,
+    string? OcrVerificationFindings,
+    string? OcrSummary,
+    string? OcrExtractedText,
+    string? OcrFailureReason,
+    Guid? OcrProcessedByUserId,
+    DateTime? OcrProcessedAtUtc);
