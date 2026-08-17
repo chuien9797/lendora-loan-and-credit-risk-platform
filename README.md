@@ -179,7 +179,7 @@ Admins can manage users and loan products directly from the UI. Product configur
 
 ![Risk and affordability assessment](docs/screenshots/risk-affordability.png)
 
-### Documents OCR
+### Documents OCR (AWS Textract)
 
 ![Documents OCR](docs/screenshots/document-ocr.png)
 ![Documents OCR](docs/screenshots/document-ocr2.png)
